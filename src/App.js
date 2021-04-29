@@ -44,8 +44,7 @@ class App extends PureComponent {
   logout_done = () => {
     axios({
       method: "get",
-      // url: "https://apibyashu.herokuapp.com/api/cakeorders",
-      url:"http://127.0.0.1:8000/api/logout/",
+      url:"http://68.183.80.25:8001/api/logout/",
       headers: {
         Authorization : "Token "+localStorage.token
     },
