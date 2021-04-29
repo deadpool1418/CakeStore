@@ -101,7 +101,7 @@ class Additem extends PureComponent {
            },()=>{
             axios({
                 method:"post",
-                url:"http://127.0.0.1:8000/api/addcake/",
+                url:"http://68.183.80.25:8001/api/addcake/",
                 data:this.state.newitem,
                 headers: {
                     Authorization : "Token "+localStorage.token
@@ -132,7 +132,7 @@ class Additem extends PureComponent {
         formdata.append("image",e.target.files[0])
         axios({
             method:"post",
-            url:"http://127.0.0.1:8000/api/uploadimg/",
+            url:"http://68.183.80.25:8001/api/uploadimg/",
             data:formdata,
             headers: {
                 Authorization : "Token "+localStorage.token,
