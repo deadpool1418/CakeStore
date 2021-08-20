@@ -117,7 +117,7 @@ class Forgetpass extends Component {
             axios({
                method:"post",
             //    url:"https://apibyashu.herokuapp.com/api/recoverpassword",
-            url:"http://68.183.80.25:8001/api/recoverpassword/",
+            url:"http://localhost:8000/api/recoverpassword/",
                data:{"email":this.state.email}, 
             }).then((response)=>{
                 if(response.data.message[0]=="N")
@@ -157,7 +157,7 @@ class Forgetpass extends Component {
                 axios({
                     method:"post",
                  //    url:"https://apibyashu.herokuapp.com/api/recoverpassword",
-                    url:"http://68.183.80.25:8001/api/resetpass/",
+                    url:"http://localhost:8000/api/resetpass/",
                     data:{"email":this.state.email,"password":this.state.password}, 
                  }).then((response)=>{
                      console.log("Success from forget password",response)

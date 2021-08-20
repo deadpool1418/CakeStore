@@ -40,7 +40,7 @@ function MyOrders() {
     axios({
       method: "post",
       // url: "https://apibyashu.herokuapp.com/api/cakeorders",
-      url:"http://68.183.80.25:8001/api/myorders/",
+      url:"http://localhost:8000/api/myorders/",
       data: {
         email: localStorage.email,
       },

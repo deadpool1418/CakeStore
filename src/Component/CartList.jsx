@@ -36,7 +36,7 @@ function CartList(props) {
             
             axios({
                 method: "post",
-                url: "http://68.183.80.25:8001/api/removefromcart/",
+                url: "http://localhost:8000/api/removefromcart/",
                 data:{
                     cakeid:cakeidd,
                     email:localStorage.email
@@ -59,7 +59,7 @@ function CartList(props) {
        useEffect(()=>{
         axios({
             method: "post",
-            url: "http://68.183.80.25:8001/api/cart/",
+            url: "http://localhost:8000/api/cart/",
             data:{
                 "email":localStorage.email
             },

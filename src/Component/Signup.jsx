@@ -174,7 +174,7 @@ class Signup extends PureComponent {
             },()=>{
                 return(axios   ({
                     // url:'https://apibyashu.herokuapp.com/api/register',
-                    url:'http://68.183.80.25:8001/api/register/',
+                    url:'http://localhost:8000/api/register/',
                     method:'post',
                     data:this.state.user
                 }).then((response)=>{
