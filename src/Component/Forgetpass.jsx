@@ -294,7 +294,7 @@ class Forgetpass extends Component {
                                 
                                 </div>
                                 <div class="form-group " style={{textAlign:"left"}}>
-                                    <button type="button" class="btn btn-primary" onClick={this.verifyToken}>Verify Token</button>
+                                    <button id ="verify-token" type="button" class="btn btn-primary" onClick={this.verifyToken}>Verify Token</button>
                                 
                                 </div>
                             </form>

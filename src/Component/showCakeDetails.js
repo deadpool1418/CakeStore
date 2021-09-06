@@ -76,14 +76,14 @@ function ShowCakeDetails(props) {
         <div className="container bg-light" style={{boxShadow:"0 10px 10px -9px black",borderRadius:"10px",border:"1px solid rgb(179, 178, 178)"}}>
             <div className="row">
                 <div className="col-sm-3 p-3 m-3" style={{ padding: '10px'}}>
-                    <img src={cake.image} style={{ height: '300px', width: '300px' ,borderRadius:"10px" }}></img>
+                    <img name = "cake-image" src={cake.image} style={{ height: '300px', width: '300px' ,borderRadius:"10px" }}></img>
                 </div>
 
                 <div className="col-sm-8" style={{ textAlign: "left" }}>
                     <div className="row" style={{ margin: "10px" }}>
 
                         <div className="col-sm-12">
-                            <h3 style={{ margin: '10px', textAlign: 'center' }}>{cake.name}</h3>
+                            <h3 id="cake-name"style={{ margin: '10px', textAlign: 'center' }}>{cake.name}</h3>
                         </div>
 
 
@@ -144,7 +144,7 @@ function ShowCakeDetails(props) {
                         <div className="col-6">
                             <div className="form-group row" style={{ marginTop: '55px' }}>
                                 <div className="col-sm-10">
-                                    <h2 style={{ color: "gray" }}>&#x20B9; {cake.price}</h2>
+                                    <h2 id="cake-price" style={{ color: "gray" }}>&#x20B9; {cake.price}</h2>
                                 </div>
                             </div>
                             <br></br>
@@ -157,10 +157,10 @@ function ShowCakeDetails(props) {
                             <br></br>
                             <div className="form-group row">
                                 <div className="col-sm-6">
-                                       <button type="submit" onClick={addcaketocart} className="btn btn-warning">Add to Cart</button>
+                                       <button id ="add-to-cart" type="submit" onClick={addcaketocart} className="btn btn-warning">Add to Cart</button>
                                 </div>
                                 <div className="col-sm-6">
-                                    <Link to="/"> <button className="btn btn-success">Add More</button></Link>
+                                    <Link to="/"> <button id ="addmore" className="btn btn-success">Add More</button></Link>
                                 </div>
                             </div>
                         </div>
