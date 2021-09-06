@@ -113,11 +113,11 @@ function CartList(props) {
                         <div class="row border p-2 m-3" style={{backgroundColor:"rgba(0,0,0,0.1)",border:"1px solid black",borderRadius:"4px"}}>
                             <div class="col-sm ">
                                 <h6><u>Total Items</u></h6>
-                                <h6>{countItem}</h6>
+                                <h6 name="total-items">{countItem}</h6>
                             </div>
                             <div class="col-sm">
                                 <h6><u>Total Price</u></h6>
-                                <h6>Rs {cartTotal}</h6>
+                                <h6 name="total-price">Rs {cartTotal}</h6>
                             </div>
                         </div>
     

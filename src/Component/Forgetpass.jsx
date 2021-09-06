@@ -317,7 +317,7 @@ class Forgetpass extends Component {
                             <input type="password" name="passwordfield" class="form-control" id="p1" placeholder="Enter Password" onChange={this.handlePassword} /><br></br>
                             <span id="matched" >{this.state.errors && this.state.errors.pass2}</span>
                             <input type="password" name="repasswordfield" class="form-control" id="p2" placeholder="Re-Enter Password" onChange={this.checkPassword} /><br></br>
-                            <button type="button" class="btn btn-primary" onClick={this.resetPassword}>Sent Token</button>
+                            <button type="button" class="btn btn-primary" onClick={this.resetPassword}>Reset Password</button>
                             
                         </form>
                     </div>

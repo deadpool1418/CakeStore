@@ -42,7 +42,7 @@ class App extends PureComponent {
 
   }
   logout_done = () => {
-    axios({
+    /*axios({
       method: "get",
       url:"http://localhost:8000/api/logout/",
       headers: {
@@ -50,16 +50,17 @@ class App extends PureComponent {
     },
     }).then(
       (response) => {
-        console.log("Logout successfull....")
-        localStorage.clear()
-        this.setState({
-          isloggedin: false
-        },()=>{window.location.href="/"})
+        
       },
       (error) => {
         console.log("Failed to Logout!!!!!", error);
       }
-    );
+    );*/
+	console.log("Logout successfull....")
+        localStorage.clear()
+        this.setState({
+          isloggedin: false
+        },()=>{window.location.href="/"})
 
   }
 

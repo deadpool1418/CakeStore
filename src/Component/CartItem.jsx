@@ -14,10 +14,10 @@ function Cart(props) {
            </div>
            <div className="col-sm-2">
                {console.log(props.mykey)}
-               <h6> {props.item.name}</h6>
+               <h6 name='cake-name'> {props.item.name}</h6>
            </div>
            <div className="col-sm-2">
-               <h6>{props.item.price}</h6>
+               <h6 name='cake-price'>{props.item.price}</h6>
            </div>
            <div className="col-sm-7 ml-5">
                <button className="btn btn-warning" onClick={handleCakeId}><i className="fa fa-trash"></i>  Remove</button>

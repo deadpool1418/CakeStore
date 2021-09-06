@@ -14,7 +14,7 @@ function Cake(props) {
             <div className="card-body">
               <h6 className="card-title">{props.item.name}</h6>
               <h6>Rs. {props.item.price} </h6>
-      
+              {console.log(props)}
               {props.item.discount && <small style={{ color: "green", fontWeight: "bolder" }}>Discount :{props.item.discount}</small>}
               {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
               <a href="#" className="btn btn-warning"><i class="fa fa-cart-plus" aria-hidden="true"></i> Buy</a>
