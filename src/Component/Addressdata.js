@@ -145,13 +145,13 @@ function Addressdata(props) {
                                     return(
                                         <div className="row m-2 border p-2">
                                         <div className="col-sm-2 text-right">
-                                            <img src={cake1.image} alt="show me" style={{ height: "40px" }} />
+                                            <img name="cake_img" src={cake1.image} alt="show me" style={{ height: "40px" }} />
                                         </div>
                                         <div className="col-sm-5 text-right">
-                                            <h6> {cake1.name}</h6>
+                                            <h6 name="cake_name"> {cake1.name}</h6>
                                         </div>
                                         <div className="col-sm-5 text-right">  
-                                            <h6>&#x20B9; {cake1.price}</h6>
+                                            <h6 name="cake_price">&#x20B9; {cake1.price}</h6>
                                         </div>
                                         <br></br>
                                     </div>
@@ -163,10 +163,10 @@ function Addressdata(props) {
                                             
                                         </div>
                                         <div className="col-sm-5 text-right">
-                                            <h6>Totat Amount :</h6>
+                                            <h6 >Totat Amount :</h6>
                                         </div>
                                         <div className="col-sm-5 text-right">  
-                                            <h6><b>&#x20B9; {props.location.state.totalamt} </b></h6>
+                                            <h6 name="total_amount"><b>&#x20B9; {props.location.state.totalamt} </b></h6>
                                         </div>
                             </div> 
                         </div>
