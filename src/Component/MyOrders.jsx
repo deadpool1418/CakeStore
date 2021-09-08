@@ -97,10 +97,10 @@ function MyOrders() {
                       style={{ borderRadius: "10px",cursor:"pointer" }}
                     >
                       <div className="col-sm-5">
-                        <b>OrderId : 1422342{ord.id}</b>
+                        <b name="order_id">OrderId : 1422342{ord.id}</b>
                       </div>
                       <div className="col-sm-6">
-                        <b>Order Date : {ord.orderdate.slice(0, 10)}</b>
+                        <b name="order_date">Order Date : {ord.orderdate.slice(0, 10)}</b>
                           {console.log(idd)}
                       </div>
                       <div className="col-sm-1">
@@ -111,16 +111,16 @@ function MyOrders() {
                       <div className="col-sm-6">
                         <div className=" row justify-content-center m-2 p-3">
                           <div className="col-sm-12 m-3">
-                            <b>Ordered by : {ord.name}</b>
+                            <b name="orderBy_name">Ordered by : {ord.name}</b>
                           </div>
                           <div className="col-sm-12 m-3">
-                            <b>Address : {ord.address}</b>
+                            <b name="orderBy_address">Address : {ord.address}</b>
                           </div>
                           <div className="col-sm-12 m-3">
-                            <b>Contact : {ord.phone}</b>
+                            <b name="orderBy_contact">Contact : {ord.phone}</b>
                           </div>
                           <div className="col-sm-12 m-3">
-                            <b>City : {ord.city}</b>
+                            <b name="orderBy_city">City : {ord.city}</b>
                           </div>
                         </div>
                       </div>
@@ -130,7 +130,7 @@ function MyOrders() {
                             <div className="row">
                               <div className="col-sm-12">
                                 <center>
-                                  <h4>Ordered Items ({ord.cakes.length})</h4>
+                                  <h4 name="order_items">Ordered Items ({ord.cakes.length})</h4>
                                 </center>
                               </div>
                             </div>
@@ -140,17 +140,17 @@ function MyOrders() {
                                 return (
                                   <div key={index} className="row m-2 border p-2">
                                     <div className="col-sm-2 text-right">
-                                      <img
+                                      <img name="cake_image"
                                         src={cake1.image}
                                         alt="show me"
                                         style={{ height: "40px" }}
                                       />
                                     </div>
                                     <div className="col-sm-5 text-right">
-                                      <h6> {cake1.name}</h6>
+                                      <h6 name="cake_name"> {cake1.name}</h6>
                                     </div>
                                     <div className="col-sm-5 text-right">
-                                      <h6>&#x20B9; {cake1.price}</h6>
+                                      <h6 name="cake_price">&#x20B9; {cake1.price}</h6>
                                     </div>
                                     <br></br>
                                   </div>
@@ -159,11 +159,11 @@ function MyOrders() {
                             <div className="row m-2 border p-2">
                               <div className="col-sm-2 text-right"></div>
                               <div className="col-sm-5 text-right">
-                                <h6>Totat Amount :</h6>
+                                <h6 name="total_amount">Totat Amount :</h6>
                               </div>
                               <div className="col-sm-5 text-right">
                                 <h6>
-                                  <b>&#x20B9; {ord.price} </b>
+                                  <b name="price">&#x20B9; {ord.price} </b>
                                 </h6>
                               </div>
                             </div>
@@ -177,7 +177,7 @@ function MyOrders() {
             </div>
             <div className="col-sm-3 mt-4">
                 <h4 className="bg-primary text-light p-2 m-2" style={{borderRadius:"4px"}}>Sort Orders by</h4>
-                <ul class="list-group px-1 mx-1" >
+                <ul name="sortList" class="list-group px-1 mx-1" >
                     <li class="list-group-item " onClick={()=>sortbyDate(false)}>Oldest orders</li>
                     <li class="list-group-item " onClick={()=>sortbyDate(true)}>Latest orders</li>
                 </ul>
@@ -188,7 +188,7 @@ function MyOrders() {
         return (
           !alldata.length>0 && (
             <div className="alert alert-warning">
-              <h3>No orders made yet!!</h3>
+              <h3 name="order_warning">No orders made yet!!</h3>
             </div>
           )
         );
