@@ -155,7 +155,7 @@ class Forgetpass extends Component {
             },()=>{
                 console.log("suceess from reset password",this.state.password,this.state.email)
                 axios({
-                    method:"post",
+                    method:"put",
                  //    url:"https://apibyashu.herokuapp.com/api/recoverpassword",
                     url:"http://localhost:8000/api/resetpass/",
                     data:{"email":this.state.email,"password":this.state.password}, 

@@ -35,7 +35,7 @@ function CartList(props) {
     {
             
             axios({
-                method: "post",
+                method: "delete",
                 url: "http://localhost:8000/api/removefromcart/",
                 data:{
                     cakeid:cakeidd,

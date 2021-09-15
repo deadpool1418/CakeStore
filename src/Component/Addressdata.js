@@ -22,6 +22,7 @@ function Addressdata(props) {
         tempitem["email"] = localStorage.email
         tempitem["cakes"]=props.location.state.cake
         tempitem["price"]=props.location.state.totalamt
+        console.log(tempitem)
         var flag = 0
         if (!tempitem["name"]) {
             errors["fname"] = "Name Required!!"
